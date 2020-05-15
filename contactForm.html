@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html"><img class="smnLogo" src="img/smnLogo.png" alt="" height="" width=""></a>
+      <ul class="navList">
+        <li class="navItem"><a href="index.html">Home</a></li>
+        <li class="navItem"><a href="#">About</a></li>
+        <li class="navItem"><a href="#">Portfolio</a></li>
+        <li class="navItem"><a href="contactForm.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    
+    <form action="contactForm.html" method="post">
+      
+      <h1>Sign Up</h1>
+      
+      <fieldset>
+        <legend>Your Name</legend>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="user_firstName" placeholder="first name"><br>
+        <label for="midName">Middle Name:</label>
+        <input type="text" id="midName" name="user_midName" placeholder="middle name"><br>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="user_lastName" placeholder="last name"><br>
+      </fieldset>
+      <fieldset>
+        <legend>Your Other Stuff</legend>
+        
+        <label for="job">Job role</label>
+        <select id="job" name="user_job">
+          <optgroup label="dev">
+          <option value="frontend dev">frontend dev</option>
+          <option value="backend dev">backend dev</option>
+
+          <option value="full stack dev">full stack dev</option>
+          </optgroup>
+        </select><br>
+        
+        <label>Age:(Radio Button)</label><br>
+        <input type="radio" id="1-15" value="1-15" name="user_age"><label for="1-15" class="radio_form"> 1 - 15 </label><br>
+        
+        <input type="radio" id="16-25" value="16-25" name="user_age"><label for="16-25" class="radio_form"> 16 - 25 </label><br>
+        <input type="radio" id=" 26 + " value="26+" name="user_age"><label for="26+" class="radio_form"> 26 + </label><br>
+        
+        <label>Interests:(Checkbox)</label><br>
+        <input type="checkbox" id="devops" value="interest_devops" name="user_interest"><label for="devops">Dev Ops</label><br>
+        
+        <input type="checkbox" id="design" value="interest_design" name="user_interest"><label for="design">Design</label><br>
+        
+        <input type="checkbox" id="Pen_Testing" value="interest_pen_testing" name="user_interest"><label for="Pen_Testing">Pen Testing</label><br>
+        
+        <input type="checkbox" id="UX/UI" value="interest_ux/ui" name="user_interest"><label for="UX/UI">UX/UI</label><br>
+        
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="emails" placeholder="email"><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="psswrd" placeholder="password"><br>
+        <label for="bio">Short Bio:</label>
+        <textarea id="bio" name="user_bio"></textarea><br>
+        <button type="reset">Reset</button><br>
+        <button type="submit">Sign Up</button><br>
+      </fieldset>
+    </form>
+    
+    
+    
+  </main>
+  
+  <footer>
+    <div class="foot">
+      <p>&copy; Steven M. Noyes 2020</p>
+    </div>
+  </footer>
+  
+  
+  <script src="js/scripts.js"></script>
+</body>
+</html>
